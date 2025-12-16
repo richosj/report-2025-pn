@@ -1,0 +1,65 @@
+@charset "utf-8";
+@page { size:a4; page-break-after:always; }
+*{margin:0; padding:0;}
+
+/* base */
+body{margin:0;color:#333;font-style:normal;font-size:14px;font-family:"Pretendard", Malgun Gothic,'malgun',"돋움",Dotum,Arial,sans-serif;line-height:1.5; font-weight: 500;}
+form, fieldset, img{margin:0;padding:0;border:0;vertical-align:top;color:#333;}
+address, caption, em{font-style:normal;}
+a{text-decoration:none;color:#333;}
+a:hover{text-decoration:underline;color:#4651AE;}
+input, select, textarea{color:#333;border:1px solid #d2d2d2;vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+*html .png24{tmp:expression(setPng24(this));}/*스크립트 선언 후 사용*/
+.clx:after{display:inline-block;content:'';overflow:hidden;clear:both;}
+/* common */
+#page_layout{margin:0 auto; width:1000px;height:1415px;}
+#page_layout .page_in{padding:70px 50px 0;}
+
+#header {height:90px;}
+.header_tit{height:50px;overflow:hidden;}
+.header_tit .page_title{float:left;font-weight:600;font-size:25px;color:#000;background: url(./logo.png) no-repeat 0 50%;background-size: auto 30px;}
+.header_tit .page_title{padding-left: 185px;}
+.bx_blue{display:block;padding:3px 10px 10px;background:#1561ae;border-radius:5px;font-weight:700;color:#fff;line-height: 110%}
+.header_tit .bx_blue{float:right;margin-top:20px;padding:3px 10px 4px;background:#1561ae;border-radius:5px;font-size:16px;color:#fff;}
+.header_infor{height:28px;border-top:1px solid #a6aaae;border-bottom:1px solid #a6aaae;color:#333;overflow: hidden;}
+.header_infor dl{float:left;width:50%;padding-left: 20px;}
+.header_infor dl dt{width:30%;text-align: left;line-height:26px;font-size:14px;color:#000;float:left}
+.header_infor dl dd{width:70%;text-align: left;line-height:26px;font-size:14px;color:#000;float: left;}
+.header_infor dl dt{font-weight:700;}
+.header_infor dl dd {font-weight:700;color:#333;}
+
+#footer{height:60px;margin-top:10px;box-sizing:border-box;}
+#footer p{padding-top:15px;border-top:1px solid #bac0c5;text-align:center;font-size:12px;color:#010101;}
+
+/*면접에......whpark*/
+#container {position:relative;margin-top:25px;overflow:hidden;}
+#container {height:1160px;}
+/*#container :not(#divTabViewArea #container) {height:1160px;}*/
+#container_score {position:relative;height:1730px;margin-top:25px;overflow:hidden;}
+/* container */
+.section{clear:both;}
+.section ~ .section{margin-top:26px;}
+
+/* 제목 */
+.page_title2 {padding:0 0 6px 22px;font-size:18px; color:#000;overflow: hidden;background: url(./tit.png) no-repeat 0 50%;background-size: auto 17px;}
+.page_title2 .notic-text{float:right;font-size: 14px;font-weight: 500;padding-top: 5px;}
+.page_title2 + p{margin-bottom:5px}
+.section_tit {padding-bottom:15px;font-size: 20px;font-weight:800; } /* h3 */
+
+.lst_type {margin-top:10px;clear:both;}
+.lst_type li{font-size:12px;}
+
+
+/* table */
+.tb_style{width:100%;}
+.tb_style table{table-layout:fixed;width:100%;border-collapse: collapse; border-spacing: 0;font-size:15px;border-bottom:1px solid #D9D9D9;}
+.tb_style tabl thead{background-color: #F2F2F2;}
+
+.highcharts-label-box.highcharts-data-label-box{
+    fill: #9D7224 !important;
+}
+
+.highcharts-series .highcharts-graph{
+    stroke: #595959 !important;
+}

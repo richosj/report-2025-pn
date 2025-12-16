@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url(./font/woff2/Pretendard-Bold.woff2) format('woff2'), url(./font/woff/Pretendard-Bold.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url(./font/woff2/Pretendard-SemiBold.woff2) format('woff2'), url(./font/woff/Pretendard-SemiBold.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url(./font/woff2/Pretendard-Medium.woff2) format('woff2'), url(./font/woff/Pretendard-Medium.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url(./font/woff2/Pretendard-Regular.woff2) format('woff2'), url(./font/woff/Pretendard-Regular.woff) format('woff');
+}
+
+
+
+/* defalut */
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {margin:0;padding:0;font-family:"Pretendard", Malgun Gothic,'malgun',"돋움",Dotum,Arial,sans-serif;}
+
+dl,ul,li {list-style:none;line-height: 100%;}
+img {/*max-width:100%;*/height:auto;vertical-align:top;border:0 none;}
+table {border-collapse:collapse;border-spacing:0;}
+caption {width:0px;height:0px;line-height:0;overflow:hidden;font-size:0px;visibility:hidden;}
+fieldset {border:0 none;}
+
+a {color:#333;text-decoration:none;}
+a:hover {text-decoration:none;}
+button {border:0 none;background:none;cursor:pointer;}
+
+html,body {line-height:150%;font-size:14px;font-family: "Pretendard", Malgun Gothic,'malgun',"돋움",Dotum,Arial,sans-serif;color:#333;letter-spacing:0em;}
+
+table,input,textarea,select,legend {
+	font-family:"Pretendard", Malgun Gothic,'malgun',"돋움",Dotum,Arial,sans-serif;
+	font-size:12px;color:#333;
+}
+pre {
+	font-family:"Pretendard", Malgun Gothic,'malgun',"돋움",Dotum,Arial,sans-serif;
+	font-size:14px;color:#333;
+}
+code {font:inherit;}
+* { box-sizing: border-box; }
