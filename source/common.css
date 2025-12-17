@@ -39,11 +39,11 @@ table{border-collapse:collapse;border-spacing:0;}
 #container_score {position:relative;height:1730px;margin-top:25px;overflow:hidden;}
 /* container */
 .section{clear:both;}
-.section ~ .section{margin-top:26px;}
+.section ~ .section{margin-top:15px;}
 
 /* 제목 */
 .page_title2 {padding:0 0 6px 22px;font-size:18px; color:#000;overflow: hidden;background: url(./tit.png) no-repeat 0 50%;background-size: auto 17px;}
-.page_title2 .notic-text{float:right;font-size: 14px;font-weight: 500;padding-top: 5px;}
+.page_title2 .notic-text{float:right;font-size: 12px;font-weight: 500;padding-top: 5px;}
 .page_title2 + p{margin-bottom:5px}
 .section_tit {padding-bottom:15px;font-size: 20px;font-weight:800; } /* h3 */
 
@@ -53,8 +53,22 @@ table{border-collapse:collapse;border-spacing:0;}
 
 /* table */
 .tb_style{width:100%;}
-.tb_style table{table-layout:fixed;width:100%;border-collapse: collapse; border-spacing: 0;font-size:15px;border-bottom:1px solid #D9D9D9;}
-.tb_style tabl thead{background-color: #F2F2F2;}
+.tb_style table{table-layout:fixed;width:100%;border-collapse: collapse; border-spacing: 0;font-size:12px;border:1px solid #D9D9D9;}
+.tb_style table thead{background-color: #F2F2F2;}
+.tb_style table tbody{}
+.tb_style table tbody td{padding: 5px;border:1px solid #D9D9D9;text-align: center;}
+.tb_style table tbody td.aw_bg{background-color: #F2BAB4;}
+
+.tb_style2{width:100%;}
+.tb_style2 table{table-layout:fixed;width:100%;border-collapse: collapse; border-spacing: 0;font-size:12px;border:1px solid #D9D9D9;}
+
+.tb_style2 table tbody th{background-color: #F2F2F2;}
+.tb_style2 table tbody td{padding: 5px;border:1px solid #D9D9D9;text-align: center;}
+.tb_style2 table tbody td.aw_bg{background-color: #F2BAB4;}
+
+.tb_style2 table.bdt0{border-top: 0;}
+.tb_style2 table tbody tr.bdt0 td{border-top: 0}
+
 
 .highcharts-label-box.highcharts-data-label-box{
     fill: #9D7224 !important;
@@ -63,3 +77,282 @@ table{border-collapse:collapse;border-spacing:0;}
 .highcharts-series .highcharts-graph{
     stroke: #595959 !important;
 }
+
+.list_box_type{
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.list_box_type h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #9D7224;
+}
+.list_md_type{
+    font-size: 18px;
+    line-height: 1.4;
+}
+.list_md_type li{
+    position: relative;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 1.34;
+}
+.list_md_type li+li{
+    margin-top: 10px;
+}
+.list_md_type li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 3px;
+    height: 3px;
+    background-color: #9D7224;
+    border-radius: 50%;
+}
+
+.comment_area{
+    overflow: hidden;
+    border: 1px solid #D9D9D9;
+    border-top: 0;
+    position: relative;
+}
+
+.comment_area::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #D9D9D9;
+}
+.comment_item{
+    float: left;
+    width: 50%;
+}
+
+.comment_item strong{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: #595959;
+    padding: 13px 0;
+}
+.comment_item ul{
+    padding: 20px;
+    font-size: 14px;
+}
+.comment_item ul li{
+    position: relative;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 1.34;
+}
+.comment_item ul li+li{
+    margin-top: 10px;
+}
+.comment_item ul li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #9D7224;
+}
+
+.list_sm_type{
+    padding: 5px 0 10px;
+}
+.list_sm_type li{
+    position: relative;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 1.3;
+}
+.list_sm_type li+li{margin-top: 3px;}
+.list_sm_type li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 3px;
+    height: 3px;
+    background-color: #9D7224;
+    border-radius: 50%;
+}
+
+.result_grid{
+    overflow: hidden;
+}
+.result_grid1{
+    float: left;
+    width: 37%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+.result_grid2{
+    float: left;
+    width: 37%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+.result_grid3{
+    width: 20%;
+    float: left;
+}
+
+.result_grid1 table th,
+.result_grid1 table td{
+    height: 30px;
+}
+
+.result_grid2 table th,
+.result_grid2 table td{
+    height: 30px;
+}
+.result_grid3{}
+.result_grid3 table{table-layout:fixed;width:100%;border-collapse: collapse; border-spacing: 0;font-size:13px;border:1px solid #D9D9D9;}
+.result_grid3 table th{text-align: center;background-color: #595959;color: #fff;font-size: 20px;font-weight:600;height: 15px;}
+.result_grid3 table td{border:1px solid #D9D9D9;text-align: center;font-size: 20px;font-weight: 600;height: 15px;}
+
+
+.bg-gray { background-color: #f1f3f5; font-weight: bold; }
+
+.graph-container {
+    display: grid;
+    grid-template-columns: 10% 15% 35% 25% 15%; /* 등급별 구간 너비 설정 */
+    position: relative;
+    height: 20px;
+    padding: 0;
+    border: none;
+}
+.v2 .graph-container{
+    grid-template-columns: 15% 20% 45% 20%;
+}
+/* td 라인이 그래프 배경을 뚫고 보이도록 설정 */
+.graph-cell { padding: 0; position: relative; }
+.grid-line {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: grid;
+    grid-template-columns: 10% 15% 35% 25% 15%;
+    pointer-events: none;
+}
+.v2 .grid-line{
+    grid-template-columns: 15% 20% 45% 20%;
+}
+.grid-line div { border-right: 1px solid #e0e0e0; height: 100%; }
+.grid-line div:last-child { border-right: none; }
+
+/* 4. 그래프 바 스타일 */
+.bar-wrapper {
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 22px;
+    z-index: 1;
+}
+
+/* 회색 배경 바 (내부 계산 수치용) */
+.bar-gray {
+    position: absolute;
+    height: 100%;
+    background-color: #e6e6e6;
+    border-radius: 0 12px 12px 0;
+    z-index: 1;
+}
+
+/* 갈색 메인 바 (결과 수치용) */
+.bar-brown {
+    position: absolute;
+    height: 60%;
+    top: 20%;
+    background-color: #966f33;
+    border-radius: 0 12px 12px 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+/* 5. 점수 라벨 위치 설정 */
+.score-text {
+    position: absolute;
+    right: -30px; /* 바 오른쪽에 위치 */
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+}
+
+/* 점수가 너무 높아 정의 칸으로 넘어갈 때 (예: 85점 이상) */
+/* 해당 바에 .score-overflow 클래스를 추가하면 위로 올라갑니다 */
+.score-overflow .score-text {
+    right: 0;
+    top: -18px;
+}
+.tb_style_score table{table-layout:fixed;width:100%;border-collapse: collapse; border-spacing: 0;font-size:12px;border:1px solid #D9D9D9;}
+.tb_style_score table thead{background-color: #F2F2F2;}
+.tb_style_score table tbody{}
+.tb_style_score table tbody td{padding: 3px;border:1px solid #D9D9D9;text-align: center;font-size: 11px;}
+
+
+/* 정의 칸 텍스트 정렬 */
+.definition { text-align: left !important; font-size: 12px; line-height: 1.5; padding: 10px 15px; }
+
+.graph-container div{
+    /* display: grid; grid-template-columns: 10% 15% 35% 25% 15%; height: 35px; align-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.bd_l1{border-left: 1px solid #D9D9D9 !important;}
+.bd_1{border-right: 1px solid #D9D9D9 !important;border-left: 1px solid #D9D9D9 !important;border-bottom: 1px solid #D9D9D9 !important;}
+
+.status-card-area{
+    overflow: hidden;
+    margin-top: 2px;
+}
+
+.status-card {
+    float: left;
+    width: 25%;
+    padding:5px;
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.status-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.status-header .text {
+    font-size:14px;
+    font-weight: 600;
+}
+
+.status-desc {
+    font-size: 12px;
+    text-align: center;
+}
+
