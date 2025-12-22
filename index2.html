@@ -604,37 +604,41 @@
 								</div>
 								<div class="status-desc">
 									해당 특성이 나타나지 않아<br>
-									문제가 될 가능성이 <strong>매우 낮음</strong>
+									문제가 될 가능성이 <br><strong>매우 낮음</strong>
+								</div>
+							</div>
+							
+							<div class="status-card">
+								<div class="status-header">
+									<span class="text">40점 이상상 :</span>
+									<span class="badge-safe">보통</span>
+								</div>
+								<div class="status-desc">
+									스트레스 상황에서 해당 특성이<br>
+									나타날 수 있으나<br>
+									문제가 될 <strong>가능성은 낮음</strong>
 								</div>
 							</div>
 							<div class="status-card">
 								<div class="status-header">
-									<span class="text">40점 미만 :</span>
-									<span class="badge-safe">안전</span>
+									<span class="text">90점 이상 : </span>
+									<span class="badge-safe">주의</span>
 								</div>
 								<div class="status-desc">
-									해당 특성이 나타나지 않아<br>
-									문제가 될 가능성이 <strong>매우 낮음</strong>
+									해당 특성을 보이는 경향은 있으나<br>
+									심한 스트레스 상황이 아니라면<br>
+									<b>문제될 수준은 아님</b>
 								</div>
 							</div>
 							<div class="status-card">
 								<div class="status-header">
-									<span class="text">40점 미만 :</span>
-									<span class="badge-safe">안전</span>
+									<span class="text">95점 이상 : </span>
+									<span class="badge-safe">위험</span>
 								</div>
 								<div class="status-desc">
-									해당 특성이 나타나지 않아<br>
-									문제가 될 가능성이 <strong>매우 낮음</strong>
-								</div>
-							</div>
-							<div class="status-card">
-								<div class="status-header">
-									<span class="text">40점 미만 :</span>
-									<span class="badge-safe">안전</span>
-								</div>
-								<div class="status-desc">
-									해당 특성이 나타나지 않아<br>
-									문제가 될 가능성이 <strong>매우 낮음</strong>
+									해당 특성이 두드러지게 나타나<br>
+									문제가 될 수 있으므로<br>
+									<b>신중한 검증 필요</b>
 								</div>
 							</div>
 
@@ -653,7 +657,7 @@
 			<div class="page_in">
 				<div id="header" class="header">
 					<div class="header_tit">
-						<h1 class="page_title">인성검사 종합 결과</h1>
+						<h1 class="page_title sol"></h1>
 					</div>
 					<div class="header_infor">
 						<dl>
@@ -766,7 +770,7 @@ function SpiderChartParnas(obj_id,arr_title,arr_data){
 		 events: {
 				render: function () {
 					const chart = this;
-					const targetStroke = '#7cb5ec';
+					const targetStroke = '#9D7224';
 					const targetWidth  = 2;
 
 					chart.series.forEach(s => {
@@ -779,7 +783,7 @@ function SpiderChartParnas(obj_id,arr_title,arr_data){
 						}
 						if (s.tracker) {
 							s.tracker.attr({
-							stroke: '#7cb5ec',
+							stroke: '#9D7224',
 							'stroke-width': 2
 							});
 						}
@@ -799,7 +803,7 @@ function SpiderChartParnas(obj_id,arr_title,arr_data){
          categories:arr_title,
          tickmarkPlacement: 'on',
          lineWidth: 0,
-         gridLineColor: '#707073',
+         gridLineColor: '#9D7224',
          useHtml: true,
          labels: {
           style : {'fontSize': '18px', 'font-weight': ':bold'}
@@ -810,7 +814,7 @@ function SpiderChartParnas(obj_id,arr_title,arr_data){
          lineWidth: 0,
          min: 0,
          max: 100,
-         gridLineColor: '#707073',
+         gridLineColor: '#9D7224',
 		 labels: 'off'
      },
      tooltip: {
@@ -828,7 +832,7 @@ function SpiderChartParnas(obj_id,arr_title,arr_data){
              line: {
                  dataLabels: {
                      enabled: true,
-					 backgroundColor: '#003399',
+					 backgroundColor: '#9D7224',
 					 style:{'color':'#FFFFFF', 'fontSize': '11px', 'fontWeight': 'bold', 'textOutline': '0px contrast'}
                  }, animation: false
              },
@@ -844,8 +848,8 @@ function SpiderChartParnas(obj_id,arr_title,arr_data){
          name: '점수',
          data: arr_data,
          pointPlacement: 'off',
-         color: '#7cb5ec',
-		 lineColor: '#7cb5ec',
+         color: '#9D7224',
+		 		 lineColor: '#9D7224',
          lineWidth: 2
      }]
  });

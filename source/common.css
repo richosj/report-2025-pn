@@ -19,12 +19,14 @@ table{border-collapse:collapse;border-spacing:0;}
 #header {height:90px;}
 .header_tit{height:50px;overflow:hidden;}
 .header_tit .page_title{float:left;font-weight:600;font-size:25px;color:#000;background: url(./logo.png) no-repeat 0 50%;background-size: auto 30px;}
+.header_tit .page_title.sol{float: right;font-size: 0;height: 30px;width: 185px;padding-left: 0;}
 .header_tit .page_title{padding-left: 185px;}
 .bx_blue{display:block;padding:3px 10px 10px;background:#1561ae;border-radius:5px;font-weight:700;color:#fff;line-height: 110%}
 .header_tit .bx_blue{float:right;margin-top:20px;padding:3px 10px 4px;background:#1561ae;border-radius:5px;font-size:16px;color:#fff;}
 .header_infor{height:28px;border-top:1px solid #a6aaae;border-bottom:1px solid #a6aaae;color:#333;overflow: hidden;}
 .header_infor dl{float:left;width:50%;padding-left: 20px;}
 .header_infor dl dt{width:30%;text-align: left;line-height:26px;font-size:14px;color:#000;float:left}
+.header_infor dl dt.sm{width: 10%;}
 .header_infor dl dd{width:70%;text-align: left;line-height:26px;font-size:14px;color:#000;float: left;}
 .header_infor dl dt{font-weight:700;}
 .header_infor dl dd {font-weight:700;color:#333;}
@@ -87,7 +89,7 @@ table{border-collapse:collapse;border-spacing:0;}
     margin-top: 50px;
 }
 .list_box_type h4{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     margin-bottom: 10px;
     color: #9D7224;
@@ -99,7 +101,7 @@ table{border-collapse:collapse;border-spacing:0;}
 .list_md_type li{
     position: relative;
     padding-left: 10px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.34;
 }
 .list_md_type li+li{
@@ -109,7 +111,7 @@ table{border-collapse:collapse;border-spacing:0;}
     content: '';
     position: absolute;
     left: 0;
-    top: 8px;
+    top: 6px;
     width: 3px;
     height: 3px;
     background-color: #9D7224;
@@ -154,7 +156,7 @@ table{border-collapse:collapse;border-spacing:0;}
 .comment_item ul li{
     position: relative;
     padding-left: 10px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.34;
 }
 .comment_item ul li+li{
@@ -164,7 +166,7 @@ table{border-collapse:collapse;border-spacing:0;}
     content: '';
     position: absolute;
     left: 0;
-    top: 8px;
+    top: 6px;
     width: 3px;
     height: 3px;
     border-radius: 50%;
