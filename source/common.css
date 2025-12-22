@@ -240,7 +240,7 @@ table{border-collapse:collapse;border-spacing:0;}
     border: none;
 }
 .v2 .graph-container{
-    grid-template-columns: 40% 50% 5% 5%;
+    grid-template-columns: 35% 45% 10% 10%;
 }
 /* td 라인이 그래프 배경을 뚫고 보이도록 설정 */
 .graph-cell { padding: 0; position: relative; }
@@ -252,7 +252,7 @@ table{border-collapse:collapse;border-spacing:0;}
     pointer-events: none;
 }
 .v2 .grid-line{
-    grid-template-columns: 40% 50% 5% 5%;
+    grid-template-columns: 35% 45% 10% 10%;
 }
 .grid-line div { border-right: 1px solid #e0e0e0; height: 100%; }
 .grid-line div:last-child { border-right: none; }
